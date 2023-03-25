@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iLlyrianHost - Home</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/fonts/all-icons.css">
+</head>
+<body>
+  <div id="header"></div>
+  <br class="d-none d-md-block"><br class="d-none d-md-block">
+  <div class="text-center mb-2">
+    <span class="section-cart-secondarytitle">Cart</span>
+    <h1 class="section-cart-title">My Products</h1>
+    <div class="section-cart container-index container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Size</th>
+            <th scope="col">Bandwidth</th>
+            <th scope="col">Support</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody class="table-cartitems">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script type="module">
+  import {Header} from './assets/js/header.js';
+  document.getElementById('header').innerHTML = Header();
+</script>
+<script type="module">
+  import {Footer} from './assets/js/footer.js';
+  document.getElementById('footer').innerHTML = Footer();
+</script>
+<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/navbar-toggle.js"></script>
+<style>@import url('http://fonts.cdnfonts.com/css/poppins');</style>
